@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the track */
+  }
+
+
+
+
+
+
+nav{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    height: 10vh;
+    background-color: black;
+}
+nav ul li{
+    list-style: none;
+}
+.logo{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
+.cont{
+    /* border: 2px solid red; */
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    
+}
+.songlist{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid yellow; */
+    background-color: rgb(66, 62, 62);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    padding: 7vh 0vh;
+    overflow-y: scroll;
+}
+@media screen and (max-width: 760px) {
+    .songlist{
+        width: 50%;
+    }
+    .songbanner{
+        width: 45%;
+    }
+  }
+
+  
+.songitem{
+    height: 5vh;
+    width: 80%;
+    border: 2px solid green;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.songbanner{
+    height: 100%;
+    width: 66%;
+    /* border: 2px solid green; */
+    background-color: rgb(27, 26, 26);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.songbanner>img{
+    width: 40vw;
+    height: 10vh;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+@media screen and (max-width: 448px) {
+    .cont{
+        flex-direction: column;
+        /* border: 2px solid green; */
+        gap: 20px;
+    }
+    .songlist{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .songbanner{
+        /* border: 2px solid rgb(255, 255, 255); */
+        width: 100%;
+        
+    }
+  }
+
+
+.bottom{
+    height: 15vh;
+    width: 100%;
+    /* border: 2px solid blue; */
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons>img{
+    scale: 1.7;
+    cursor: pointer;
+}
